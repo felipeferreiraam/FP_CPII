@@ -1,0 +1,134 @@
+//Exer.1 5 Variaveis tipo Number, String e Boolean.
+
+var n1 = 5
+var n2 = "Isso é uma String"
+var n3 = 2 > 3
+var n4 = -1
+var n5 = '1+2'
+
+alert (typeof (n1))
+alert (typeof (n2))
+alert (typeof (n3))
+alert (typeof (n4))
+alert (typeof (n5))
+
+//Exer.2 Receber dois valores, somar e exibir resultado
+
+
+var v1 = prompt ("Iinforme valor 1")
+var v2 = prompt ("Iinforme valor 2")
+
+var soma= parseFloat(v1) + parseFloat(v2)
+
+alert ('O valor é : '+ soma)
+
+// Exer.3 - Valor do Perimetro
+
+var valor = prompt ("Informe o valor ")
+
+cm = 100
+const converte = valor * cm
+
+let perimetro = 4*converte
+
+alert ("Valor do perimetro é: " + perimetro + "cm")
+
+//Exer.4 - Valor do Quadrado
+
+var valor = prompt ("Informe o valor ")
+
+resultado = parseInt(valor) ** 4
+
+alert ("Valor é: " + resultado)
+
+
+//Exer.5 
+
+//Exer.6 - Faixa de idade
+
+var idade = prompt ("Informe sua Idade")
+
+if ( idade >0 && idade <=10) {
+  alert ("Sua classificaçao é Criança!")
+} else if (idade >10 && idade <= 15) {
+   alert ("Sua classificaçao é Adolescente!")
+} else if  (idade >16 && idade <= 18) {
+  alert ("Sua classificaçao é Jovem!")
+}else if (idade >19 && idade <= 60) {
+  alert ("Sua classificaçao é Adulto!")
+}else if(idade >= 61) {
+ alert ("Sua classificaçao é Idoso!")
+}
+
+//Exer.7 - Multa
+
+var velocidade = prompt ("Informe velocidade ?")
+  
+multa = parseFloat(3.99)
+  
+
+if (velocidade <= 60){
+  alert ("Voce nao possui multas!!")
+} else if (velocidade > 60 ){
+ alert ("Multa no valor de: " + (multa))
+}
+
+//Exer.8 - Combustivel
+
+var produto = prompt ("Deseja abstecer Etanol ou Gasolina ?")
+
+var produtoGasolina = gasolina
+var produtoEtanol = etanol
+
+var litros = prompt ("Infome a quantidade litros abastecido")
+
+var gasolina = Math.trunc(5.99)
+var etanol = Math.trunc(4.01)
+
+if (produto == produtoGasolina){
+     alert ("O total de gasolina foi: R$" +Math.trunc(litros) * Math.trunc(gasolina))
+}else {
+  alert ("O total de etanol foi: R$" +Math.trunc(litros) * Math.trunc(etanol))
+}
+
+//Exer.9 Calculadora
+
+var n1 = prompt ("Informe valor 1")
+var n2 = prompt ("Informe valor 2")
+
+var opcao = prompt ("Escolha a opção: " + 1 + "-Soma; " + 2 + "-Subtração; " + 3 + "-Multiplicaçao; " + 4 + "-Divisão; ")
+
+  
+var soma = parseFloat(n1)+ parseFloat(n2)
+var sub = parseFloat(n1)- parseFloat(n2)
+var mult = parseFloat(n1)* parseFloat(n2)
+var div = parseFloat(n1) / parseFloat(n2)
+
+if (opcao == 1){
+ alert (soma)
+} else if (opcao ==2){
+  alert (sub)
+} else if (opcao ==3){
+  alert (mult)
+} else if (opcao ==4){
+  alert (div)
+}
+
+//Exer.10 - Quiz
+
+alert ("Questão 1 - Quem foi o campeão da copa 1970 ?")
+
+var opcao = prompt ("a) Uruguai b) Brasil c) Inglaterra d) Italia e) Alemanha")
+                         
+var a = false
+var b = true
+var c = false
+var d = false
+var e = false
+
+if (opcao =="b" || "B") {
+ alert ("Parabéns!! Resposta Certa!!")
+} 
+ else {
+   alert ("Errado, tente novamente ")
+}
