@@ -37,12 +37,18 @@ alert ("Valor do perimetro é: " + perimetro + "cm")
 
 var valor = prompt ("Informe o valor ")
 
-resultado = parseInt(valor) ** 4
+resultado = parseInt(valor) ** 2
 
 alert ("Valor é: " + resultado)
 
 
 //Exer.5 
+
+var horas = prompt ("Digite um valor em horas")
+var minutos = horas * 60
+var segundos = minutos * 60
+
+alert (" A hora é: " + segundos)
 
 //Exer.6 - Faixa de idade
 
@@ -56,7 +62,7 @@ if ( idade >0 && idade <=10) {
   alert ("Sua classificaçao é Jovem!")
 }else if (idade >19 && idade <= 60) {
   alert ("Sua classificaçao é Adulto!")
-}else if(idade >= 61) {
+}else if (idade >= 61) {
  alert ("Sua classificaçao é Idoso!")
 }
 
@@ -64,9 +70,8 @@ if ( idade >0 && idade <=10) {
 
 var velocidade = prompt ("Informe velocidade ?")
   
-multa = parseFloat(3.99)
+multa = 3.99
   
-
 if (velocidade <= 60){
   alert ("Voce nao possui multas!!")
 } else if (velocidade > 60 ){
@@ -82,8 +87,8 @@ var produtoEtanol = etanol
 
 var litros = prompt ("Infome a quantidade litros abastecido")
 
-var gasolina = Math.trunc(5.99)
-var etanol = Math.trunc(4.01)
+var gasolina = 5.99
+var etanol = 4.01
 
 if (produto == produtoGasolina){
      alert ("O total de gasolina foi: R$" +Math.trunc(litros) * Math.trunc(gasolina))
@@ -132,3 +137,18 @@ if (opcao =="b" || "B") {
  else {
    alert ("Errado, tente novamente ")
 }
+
+
+exe 7
+const max_via = 60
+const multa_por_km_excedente = 3.99
+
+var velocidade = prompt("Digite o valor em km/h")
+var excedente = velocidade - max_via
+var multa = excedente * multa_por_km_excedente
+
+if (velocidade > max_via){
+  alert ("O valor da multa é:" + multa)
+} else {
+   alert ("Voce nao teve multas")
+    }
