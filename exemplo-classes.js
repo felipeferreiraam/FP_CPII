@@ -2,6 +2,7 @@ class Vendedor {
   nome
   cargo
   vendas = []
+  
   comissao = 0
   totalVendas = 0
   
@@ -22,9 +23,11 @@ class Vendedor {
 class Produto {
   nome
   valor
-  
-   constructor(nome) {
+   
+   
+   constructor(nome, valor) {
     this.nome = nome
+    this.valor = valor
   }
   
 }
@@ -42,25 +45,25 @@ var vendedor2 = new Cargo()
 vendedor2.nome = "Vendedor Nível 2"
 vendedor2.percentual = 0.1
 
-var item1 = new Produto()
-item1.nome = "Sapato"
-item1.valor = 70
 
-var item2 = new Produto()
-item2.nome = "Camisa"
-item2.valor = 30
+var nome = prompt("Digite o nome do produto")
+var valor = parseFloat(prompt("Digite o preco"))
+var item1 = new Produto (nome, valor)
+
+var nome = prompt("Digite o nome do produto")
+var valor = parseFloat(prompt("Digite o preço"))
+var item2 = new Produto (nome, valor)
+ 
 
 var joaozinho = new Vendedor()
 joaozinho.nome = "João"
 joaozinho.cargo = vendedor1
-
-var venda1 = new Produto()
-var venda2 = new Produto()
 
 joaozinho.vendas.push(item1)
 joaozinho.vendas.push(item2)
 
 joaozinho.calcularTotalDeVendas()
 joaozinho.calcularComissao()
+
 
 console.log(joaozinho)
