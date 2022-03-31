@@ -65,5 +65,6 @@ joaozinho.vendas.push(item2)
 joaozinho.calcularTotalDeVendas()
 joaozinho.calcularComissao()
 
+alert ("O total de vendas é: " + joaozinho.totalVendas)
 
 console.log(joaozinho)
