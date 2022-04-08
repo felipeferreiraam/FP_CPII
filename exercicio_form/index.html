@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+    <link rel="stylesheet" href="./assets/style.css">
+
+<body>
+  
+    <h1>Inscreva-se</h1>
+    <form>
+        <ul>
+            <li><h2>Nome</h2></li> 
+            <li><input type="text" name="Nome" ></li>
+            <li><h2>E-mail</h2></li> 
+            <li><input type="text" name="E-mail" ></li>
+            <li><h2>Data Nascimento</h2></li> 
+            <li><input type="date" name="data_nascimento" ></li>
+
+            <h2 id="sexo"> Sexo</h2> 
+            <label class="sexo">
+                <input type="radio" name="radio" /> Masculino
+              </label>
+              <label class="sexo">
+                <input type="radio" name="radio" /> Feminino
+              </label>
+            
+            <li><h2>Endereço</h2></li> 
+            <li><input type="text" name="endereco" ></li>
+            <li><h2>Estado</h2></li> 
+            <li><select name="uf">
+                <option value="" disabled selected="selected">Selecione uma opção</option>
+                <option value="AM">Amazonas</option>
+                <option value="AC">Acre</option>
+            </select></li>
+        </ul>
+            <div id="check">
+                <input type="checkbox" id="check" > Concordo com os termos e condições
+            </div>
+        <button>Cadastrar Conta</button>
+           
+
+
+
+
+
+
+</body>
+</html>

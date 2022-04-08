@@ -1,0 +1,77 @@
+body{
+font-family: roboto; 
+background: #E5E5E5;
+}
+
+form {
+  width: 100%;
+  max-width: 300px;
+  margin: 30px auto;
+  background: #fff;
+  box-shadow: 0 4px 4px rgb(0 0 0 / 15%);
+  border-radius: 8px;
+  padding: 15px 20px 15px;
+  }
+
+h1{
+margin-left: 38%;
+margin-bottom: -15px;
+}
+
+h2{
+font-weight: 700;
+font-size: 14px;
+line-height: 12px;
+}
+
+li {
+  list-style: none;
+}
+
+#sexo{
+  margin-bottom: 5px;
+  font-size: 14px;
+}  
+  
+.sexo {
+font-size: 14px;
+font-weight: bold;
+line-height: 1.4;
+display: grid;
+grid-template-columns: 1em auto;
+gap: 0.8em;
+}
+
+input, select{
+width: 90%;    
+background: #ECECEC;
+border: 2px solid #D2D9DA;
+box-sizing: border-box;
+border-radius: 4px;
+line-height: 22px;
+}
+    
+button{
+background: #FFBA09;
+border: 10px solid #FFBA09;
+box-sizing: border-box;
+border-radius: 4px;
+font-family: 'Roboto';
+color: #513602;
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 15px;
+display: flex;
+margin: 20px 35px;
+    }
+
+#check{
+  margin: 3.5px 20px 0px;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1.5;
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 1.8em;  
+}
